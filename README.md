@@ -1,11 +1,11 @@
 # ChordBro
 
-This repository is the source-available ChordBro plugin core required for license compliance.
+This repository is the public source release for the ChordBro plugin core.
 
-Repository layout:
+Included:
 
 - `ripchord-main/`: JUCE plugin source, assets, and CMake project files.
-- `packaging/`: Windows installer assets and release packaging scripts.
-- `scripts/`: helper scripts for preset generation and local builds.
 
-The commercial content library, website, documentation workspace, local preset archives, build outputs, installers, and dependency caches are intentionally excluded from this public repository.
+Build from `ripchord-main/CMakeLists.txt` with your local JUCE setup.
+
+Commercial content, website code, documentation workspace, packaging assets, helper scripts, preset archives, installers, and build outputs are intentionally excluded from this public repository.

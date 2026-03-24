@@ -1,3 +1,0 @@
-Factory presets are seeded by ChordBro on first launch.
-
-This installer deploys the official ChordBro VST3 and preloads every premium preset pack into the shared ChordBro library.

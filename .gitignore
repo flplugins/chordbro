@@ -4,10 +4,12 @@
 /chordbro_codex_prompt_v2.md
 /commercial-content/
 /docs/
+/packaging/
 /packaging/dist/
 /packaging/mac-handoff/MAC_CODEX_PROMPT.md
 /presets/
 /ripchord-main/build/
+/scripts/
 /website/
 
 *.dll
