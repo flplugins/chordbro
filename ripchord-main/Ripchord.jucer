@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="cWQoqq" name="ChordBro" projectType="audioplug" version="3.0.0"
+              companyName="FL Plugins" companyWebsite="https://chordbro.com"
+              pluginCharacteristicsValue="pluginIsSynth,pluginProducesMidiOut,pluginWantsMidiIn"
+              pluginFormats="buildAU,buildVST3" pluginName="ChordBro"
+              pluginDesc="ChordBro MIDI chord performance plugin" pluginManufacturer="FL Plugins" pluginManufacturerCode="FLPI"
+              pluginCode="ChBr" pluginAUMainType="'aumu'" pluginVST3Category="Instrument|Tools"
+              reportAppUsage="0" displaySplashScreen="0" splashScreenColour="Dark"
+              jucerFormatVersion="1" defines="JUCE_MODAL_LOOPS_PERMITTED=1">
+  <MAINGROUP id="gjMAdL" name="ChordBro">
+    <GROUP id="{B7141C90-8679-6CA6-DFD2-5E27422D1A61}" name="Source">
+      <GROUP id="{3E841B27-D72E-1E3E-82C9-FBBC01EC00A2}" name="Assets">
+        <FILE id="srm91D" name="AllBlack.svg" compile="0" resource="1" file="Source/Assets/AllBlack.svg"/>
+        <FILE id="WT8Hs6" name="AllBlackON.svg" compile="0" resource="1" file="Source/Assets/AllBlackON.svg"/>
+        <FILE id="YXTT7K" name="AllWhite.svg" compile="0" resource="1" file="Source/Assets/AllWhite.svg"/>
+        <FILE id="IiQSHc" name="AllWhiteON.svg" compile="0" resource="1" file="Source/Assets/AllWhiteON.svg"/>
+        <FILE id="yTTncx" name="Cancel.svg" compile="0" resource="1" file="Source/Assets/Cancel.svg"/>
+        <FILE id="xYd90i" name="CheckEmpty.svg" compile="0" resource="1" file="Source/Assets/CheckEmpty.svg"/>
+        <FILE id="HyectE" name="CheckFull.svg" compile="0" resource="1" file="Source/Assets/CheckFull.svg"/>
+        <FILE id="WxymdW" name="CreateTag.svg" compile="0" resource="1" file="Source/Assets/CreateTag.svg"/>
+        <FILE id="eqUcWa" name="Delay.svg" compile="0" resource="1" file="Source/Assets/Delay.svg"/>
+        <FILE id="Gtu3L5" name="DelayON.svg" compile="0" resource="1" file="Source/Assets/DelayON.svg"/>
+        <FILE id="ky3bjU" name="Delete.svg" compile="0" resource="1" file="Source/Assets/Delete.svg"/>
+        <FILE id="aBWMeq" name="Direction.svg" compile="0" resource="1" file="Source/Assets/Direction.svg"/>
+        <FILE id="ra1uZD" name="DirectionAB.svg" compile="0" resource="1" file="Source/Assets/DirectionAB.svg"/>
+        <FILE id="yvjyQH" name="DirectionABBA.svg" compile="0" resource="1"
+              file="Source/Assets/DirectionABBA.svg"/>
+        <FILE id="IWgHHA" name="DirectionBA.svg" compile="0" resource="1" file="Source/Assets/DirectionBA.svg"/>
+        <FILE id="hYM33w" name="DirectionBAAB.svg" compile="0" resource="1"
+              file="Source/Assets/DirectionBAAB.svg"/>
+        <FILE id="rQd5aX" name="Down.svg" compile="0" resource="1" file="Source/Assets/Down.svg"/>
+        <FILE id="rJ5OV7" name="Favorites.svg" compile="0" resource="1" file="Source/Assets/Favorites.svg"/>
+        <FILE id="ij7tFk" name="FavoritesON.svg" compile="0" resource="1" file="Source/Assets/FavoritesON.svg"/>
+        <FILE id="eksyyG" name="GearCircle.svg" compile="0" resource="1" file="Source/Assets/GearCircle.svg"/>
+        <FILE id="qdTpVh" name="KeyboardBg.svg" compile="0" resource="1" file="Source/Assets/KeyboardBg.svg"/>
+        <FILE id="Ux2KAh" name="Keyboards.svg" compile="0" resource="1" file="Source/Assets/Keyboards.svg"/>
+        <FILE id="nW0vRx" name="MenuDuplicate.svg" compile="0" resource="1"
+              file="Source/Assets/MenuDuplicate.svg"/>
+        <FILE id="RLd0le" name="MenuDuplicateOFF.svg" compile="0" resource="1"
+              file="Source/Assets/MenuDuplicateOFF.svg"/>
+        <FILE id="jusRVZ" name="MenuExportMidi.svg" compile="0" resource="1"
+              file="Source/Assets/MenuExportMidi.svg"/>
+        <FILE id="pj13Sq" name="MenuExportMidiOFF.svg" compile="0" resource="1"
+              file="Source/Assets/MenuExportMidiOFF.svg"/>
+        <FILE id="KV9ory" name="MenuExportPreset.svg" compile="0" resource="1"
+              file="Source/Assets/MenuExportPreset.svg"/>
+        <FILE id="dHbwyp" name="MenuExportPresetOFF.svg" compile="0" resource="1"
+              file="Source/Assets/MenuExportPresetOFF.svg"/>
+        <FILE id="RrB3j6" name="MenuImportMidi.svg" compile="0" resource="1"
+              file="Source/Assets/MenuImportMidi.svg"/>
+        <FILE id="mvNzAD" name="MenuImportMPC.svg" compile="0" resource="1"
+              file="Source/Assets/MenuImportMPC.svg"/>
+        <FILE id="G0bEtN" name="MenuImportPreset.svg" compile="0" resource="1"
+              file="Source/Assets/MenuImportPreset.svg"/>
+        <FILE id="fmqB89" name="MenuNewPreset.svg" compile="0" resource="1"
+              file="Source/Assets/MenuNewPreset.svg"/>
+        <FILE id="Cd5zV7" name="MenuThemeDARK.svg" compile="0" resource="1"
+              file="Source/Assets/MenuThemeDARK.svg"/>
+        <FILE id="MNTxFc" name="MenuThemeLIGHT.svg" compile="0" resource="1"
+              file="Source/Assets/MenuThemeLIGHT.svg"/>
+        <FILE id="h2kaae" name="ModalBgDARK.svg" compile="0" resource="1" file="Source/Assets/ModalBgDARK.svg"/>
+        <FILE id="nA5Y9O" name="ModalBgLIGHT.svg" compile="0" resource="1"
+              file="Source/Assets/ModalBgLIGHT.svg"/>
+        <FILE id="je4NIx" name="ModeEDIT.svg" compile="0" resource="1" file="Source/Assets/ModeEDIT.svg"/>
+        <FILE id="zf1Czg" name="ModePLAY.svg" compile="0" resource="1" file="Source/Assets/ModePLAY.svg"/>
+        <FILE id="aRUFsj" name="MoveLeft.svg" compile="0" resource="1" file="Source/Assets/MoveLeft.svg"/>
+        <FILE id="f3MFfH" name="MoveLeftON.svg" compile="0" resource="1" file="Source/Assets/MoveLeftON.svg"/>
+        <FILE id="WsN9k7" name="MoveRight.svg" compile="0" resource="1" file="Source/Assets/MoveRight.svg"/>
+        <FILE id="fwkm9p" name="MoveRightON.svg" compile="0" resource="1" file="Source/Assets/MoveRightON.svg"/>
+        <FILE id="wYXkO3" name="NewTagBg.svg" compile="0" resource="1" file="Source/Assets/NewTagBg.svg"/>
+        <FILE id="Rsh9gN" name="Next.svg" compile="0" resource="1" file="Source/Assets/Next.svg"/>
+        <FILE id="BlA4Ax" name="NextON.svg" compile="0" resource="1" file="Source/Assets/NextON.svg"/>
+        <FILE id="p1HXeL" name="Power.svg" compile="0" resource="1" file="Source/Assets/Power.svg"/>
+        <FILE id="jSd6at" name="PowerON.svg" compile="0" resource="1" file="Source/Assets/PowerON.svg"/>
+        <FILE id="TwcSQA" name="PresetBrowserBg.svg" compile="0" resource="1"
+              file="Source/Assets/PresetBrowserBg.svg"/>
+        <FILE id="BJ89wL" name="Presets.svg" compile="0" resource="1" file="Source/Assets/Presets.svg"/>
+        <FILE id="YYDihW" name="Prev.svg" compile="0" resource="1" file="Source/Assets/Prev.svg"/>
+        <FILE id="u4JyV1" name="PrevON.svg" compile="0" resource="1" file="Source/Assets/PrevON.svg"/>
+        <FILE id="U7c6ay" name="QuickFav.svg" compile="0" resource="1" file="Source/Assets/QuickFav.svg"/>
+        <FILE id="CDQDlP" name="QuickFavON.svg" compile="0" resource="1" file="Source/Assets/QuickFavON.svg"/>
+        <FILE id="usbS0W" name="Record.svg" compile="0" resource="1" file="Source/Assets/Record.svg"/>
+        <FILE id="SMGX6I" name="Recorded.svg" compile="0" resource="1" file="Source/Assets/Recorded.svg"/>
+        <FILE id="tBgLHH" name="RecordedIN.svg" compile="0" resource="1" file="Source/Assets/RecordedIN.svg"/>
+        <FILE id="RrUSM3" name="RecordedON.svg" compile="0" resource="1" file="Source/Assets/RecordedON.svg"/>
+        <FILE id="z9MVe5" name="RecordIN.svg" compile="0" resource="1" file="Source/Assets/RecordIN.svg"/>
+        <FILE id="xVNQHi" name="RecordON.svg" compile="0" resource="1" file="Source/Assets/RecordON.svg"/>
+        <FILE id="POfMuw" name="ResetSizeOFF.svg" compile="0" resource="1"
+              file="Source/Assets/ResetSizeOFF.svg"/>
+        <FILE id="fGfohB" name="ResetSizeON.svg" compile="0" resource="1" file="Source/Assets/ResetSizeON.svg"/>
+        <FILE id="qEy7BM" name="RightClickBgDARK.svg" compile="0" resource="1"
+              file="Source/Assets/RightClickBgDARK.svg"/>
+        <FILE id="ulIEyP" name="RightClickBgLIGHT.svg" compile="0" resource="1"
+              file="Source/Assets/RightClickBgLIGHT.svg"/>
+        <FILE id="Htpgjv" name="RightClickCopy.svg" compile="0" resource="1"
+              file="Source/Assets/RightClickCopy.svg"/>
+        <FILE id="s9Uubu" name="RightClickCut.svg" compile="0" resource="1"
+              file="Source/Assets/RightClickCut.svg"/>
+        <FILE id="hj0AvZ" name="RightClickPaste.svg" compile="0" resource="1"
+              file="Source/Assets/RightClickPaste.svg"/>
+        <FILE id="UzmS53" name="Save.svg" compile="0" resource="1" file="Source/Assets/Save.svg"/>
+        <FILE id="ibVq0f" name="SaveON.svg" compile="0" resource="1" file="Source/Assets/SaveON.svg"/>
+        <FILE id="QSs1r4" name="SearchBarBg.svg" compile="0" resource="1" file="Source/Assets/SearchBarBg.svg"/>
+        <FILE id="JtxdnB" name="ShiftLeft.svg" compile="0" resource="1" file="Source/Assets/ShiftLeft.svg"/>
+        <FILE id="QGPSBv" name="ShiftLeftON.svg" compile="0" resource="1" file="Source/Assets/ShiftLeftON.svg"/>
+        <FILE id="z48l6V" name="ShiftRight.svg" compile="0" resource="1" file="Source/Assets/ShiftRight.svg"/>
+        <FILE id="C8wJAs" name="ShiftRightON.svg" compile="0" resource="1"
+              file="Source/Assets/ShiftRightON.svg"/>
+        <FILE id="f5G4ur" name="Star.svg" compile="0" resource="1" file="Source/Assets/Star.svg"/>
+        <FILE id="ZXFQUB" name="StarON.svg" compile="0" resource="1" file="Source/Assets/StarON.svg"/>
+        <FILE id="SSZ1dq" name="Success.svg" compile="0" resource="1" file="Source/Assets/Success.svg"/>
+        <FILE id="v5aDNM" name="TagManager.svg" compile="0" resource="1" file="Source/Assets/TagManager.svg"/>
+        <FILE id="w0UmdJ" name="TagBarBg.svg" compile="0" resource="1" file="Source/Assets/TagBarBg.svg"/>
+        <FILE id="i5dy9v" name="TagBrowserBg.svg" compile="0" resource="1"
+              file="Source/Assets/TagBrowserBg.svg"/>
+        <FILE id="CKWhXf" name="TagSelector.svg" compile="0" resource="1" file="Source/Assets/TagSelector.svg"/>
+        <FILE id="Q35Y6m" name="TagSelectorON.svg" compile="0" resource="1"
+              file="Source/Assets/TagSelectorON.svg"/>
+        <FILE id="JQWdDr" name="Trackbout.svg" compile="0" resource="1" file="Source/Assets/Trackbout.svg"/>
+        <FILE id="QExcvS" name="Transpose.svg" compile="0" resource="1" file="Source/Assets/Transpose.svg"/>
+        <FILE id="sFpF0o" name="TransposeON.svg" compile="0" resource="1" file="Source/Assets/TransposeON.svg"/>
+        <FILE id="RR0aEu" name="Trash.svg" compile="0" resource="1" file="Source/Assets/Trash.svg"/>
+        <FILE id="eQ4pVJ" name="Up.svg" compile="0" resource="1" file="Source/Assets/Up.svg"/>
+        <FILE id="yVz3Tz" name="Variance.svg" compile="0" resource="1" file="Source/Assets/Variance.svg"/>
+        <FILE id="yd6gXG" name="VarianceON.svg" compile="0" resource="1" file="Source/Assets/VarianceON.svg"/>
+        <FILE id="NFOL4K" name="Velocity.svg" compile="0" resource="1" file="Source/Assets/Velocity.svg"/>
+        <FILE id="Yx52Rg" name="VelocityON.svg" compile="0" resource="1" file="Source/Assets/VelocityON.svg"/>
+        <FILE id="sqHvIP" name="Version.svg" compile="0" resource="1" file="Source/Assets/Version.svg"/>
+      </GROUP>
+      <GROUP id="{DE63C15D-860F-4534-2FF8-CBC79484AC7F}" name="Components">
+        <FILE id="aMqYp3" name="MainComponent.cpp" compile="1" resource="0"
+              file="Source/Components/MainComponent.cpp"/>
+        <FILE id="ViRR0T" name="MainComponent.h" compile="0" resource="0" file="Source/Components/MainComponent.h"/>
+        <FILE id="JWLzcX" name="KeyboardViewComponent.cpp" compile="1" resource="0"
+              file="Source/Components/KeyboardViewComponent.cpp"/>
+        <FILE id="FVJTpd" name="KeyboardViewComponent.h" compile="0" resource="0"
+              file="Source/Components/KeyboardViewComponent.h"/>
+        <FILE id="dlQPGa" name="PlayControlsComponent.cpp" compile="1" resource="0"
+              file="Source/Components/PlayControlsComponent.cpp"/>
+        <FILE id="hPkuDX" name="PlayControlsComponent.h" compile="0" resource="0"
+              file="Source/Components/PlayControlsComponent.h"/>
+        <FILE id="Ke83UW" name="EditControlsComponent.cpp" compile="1" resource="0"
+              file="Source/Components/EditControlsComponent.cpp"/>
+        <FILE id="jO1wNT" name="EditControlsComponent.h" compile="0" resource="0"
+              file="Source/Components/EditControlsComponent.h"/>
+        <FILE id="M5LMNA" name="RecordedMidiComponent.cpp" compile="1" resource="0"
+              file="Source/Components/RecordedMidiComponent.cpp"/>
+        <FILE id="SD2nYx" name="RecordedMidiComponent.h" compile="0" resource="0"
+              file="Source/Components/RecordedMidiComponent.h"/>
+        <FILE id="vTGUGv" name="ChordNameComponent.cpp" compile="1" resource="0"
+              file="Source/Components/ChordNameComponent.cpp"/>
+        <FILE id="Q7PhgU" name="ChordNameComponent.h" compile="0" resource="0"
+              file="Source/Components/ChordNameComponent.h"/>
+        <FILE id="w5X3i9" name="PresetNameComponent.cpp" compile="1" resource="0"
+              file="Source/Components/PresetNameComponent.cpp"/>
+        <FILE id="DFXIBa" name="PresetNameComponent.h" compile="0" resource="0"
+              file="Source/Components/PresetNameComponent.h"/>
+        <FILE id="yq76Mz" name="OutputKeyboardComponent.cpp" compile="1" resource="0"
+              file="Source/Components/OutputKeyboardComponent.cpp"/>
+        <FILE id="B4Zw7y" name="OutputKeyboardComponent.h" compile="0" resource="0"
+              file="Source/Components/OutputKeyboardComponent.h"/>
+        <FILE id="HC8Qqq" name="InputKeyboardComponent.cpp" compile="1" resource="0"
+              file="Source/Components/InputKeyboardComponent.cpp"/>
+        <FILE id="s67xmg" name="InputKeyboardComponent.h" compile="0" resource="0"
+              file="Source/Components/InputKeyboardComponent.h"/>
+        <FILE id="aktIq3" name="KeyboardComponent.cpp" compile="1" resource="0"
+              file="Source/Components/KeyboardComponent.cpp"/>
+        <FILE id="YDr76D" name="KeyboardComponent.h" compile="0" resource="0"
+              file="Source/Components/KeyboardComponent.h"/>
+        <FILE id="Dvapds" name="KeyComponent.cpp" compile="1" resource="0"
+              file="Source/Components/KeyComponent.cpp"/>
+        <FILE id="OKKeCw" name="KeyComponent.h" compile="0" resource="0" file="Source/Components/KeyComponent.h"/>
+        <FILE id="IQYOMt" name="DeleteComponent.cpp" compile="1" resource="0"
+              file="Source/Components/DeleteComponent.cpp"/>
+        <FILE id="Xq1GJS" name="DeleteComponent.h" compile="0" resource="0"
+              file="Source/Components/DeleteComponent.h"/>
+        <FILE id="GQp193" name="PresetViewComponent.cpp" compile="1" resource="0"
+              file="Source/Components/PresetViewComponent.cpp"/>
+        <FILE id="jiCklL" name="PresetViewComponent.h" compile="0" resource="0"
+              file="Source/Components/PresetViewComponent.h"/>
+        <FILE id="B6w6nM" name="PresetBrowserComponent.cpp" compile="1" resource="0"
+              file="Source/Components/PresetBrowserComponent.cpp"/>
+        <FILE id="SC7dBf" name="PresetBrowserComponent.h" compile="0" resource="0"
+              file="Source/Components/PresetBrowserComponent.h"/>
+        <FILE id="mxmlCD" name="PresetTaggerComponent.cpp" compile="1" resource="0"
+              file="Source/Components/PresetTaggerComponent.cpp"/>
+        <FILE id="H6kHA3" name="PresetTaggerComponent.h" compile="0" resource="0"
+              file="Source/Components/PresetTaggerComponent.h"/>
+        <FILE id="N0yrvE" name="PresetComponent.cpp" compile="1" resource="0"
+              file="Source/Components/PresetComponent.cpp"/>
+        <FILE id="wMXjn0" name="PresetComponent.h" compile="0" resource="0"
+              file="Source/Components/PresetComponent.h"/>
+        <FILE id="B08eMH" name="TagManagerComponent.cpp" compile="1" resource="0"
+              file="Source/Components/TagManagerComponent.cpp"/>
+        <FILE id="AiSOf0" name="TagManagerComponent.h" compile="0" resource="0"
+              file="Source/Components/TagManagerComponent.h"/>
+        <FILE id="wXa4vX" name="TagBrowserComponent.cpp" compile="1" resource="0"
+              file="Source/Components/TagBrowserComponent.cpp"/>
+        <FILE id="gJwNpj" name="TagBrowserComponent.h" compile="0" resource="0"
+              file="Source/Components/TagBrowserComponent.h"/>
+        <FILE id="cNcXlG" name="TagBarComponent.cpp" compile="1" resource="0"
+              file="Source/Components/TagBarComponent.cpp"/>
+        <FILE id="pxE9lh" name="TagBarComponent.h" compile="0" resource="0"
+              file="Source/Components/TagBarComponent.h"/>
+        <FILE id="WLBDxw" name="TagComponent.cpp" compile="1" resource="0"
+              file="Source/Components/TagComponent.cpp"/>
+        <FILE id="BQU4w6" name="TagComponent.h" compile="0" resource="0" file="Source/Components/TagComponent.h"/>
+        <FILE id="E1Kwyk" name="RightClickComponent.cpp" compile="1" resource="0"
+              file="Source/Components/RightClickComponent.cpp"/>
+        <FILE id="sLuZcM" name="RightClickComponent.h" compile="0" resource="0"
+              file="Source/Components/RightClickComponent.h"/>
+        <FILE id="ZOMEiV" name="MenuComponent.cpp" compile="1" resource="0"
+              file="Source/Components/MenuComponent.cpp"/>
+        <FILE id="IpVUvC" name="MenuComponent.h" compile="0" resource="0" file="Source/Components/MenuComponent.h"/>
+      </GROUP>
+      <GROUP id="{236D2A67-71F8-D9E9-5652-7A1EEB731DFC}" name="Messaging">
+        <FILE id="dupQlV" name="DataMessageManager.cpp" compile="1" resource="0"
+              file="Source/Messaging/DataMessageManager.cpp"/>
+        <FILE id="ycNWc8" name="DataMessageManager.h" compile="0" resource="0"
+              file="Source/Messaging/DataMessageManager.h"/>
+        <FILE id="C4Cxek" name="DataMessageBroadcaster.cpp" compile="1" resource="0"
+              file="Source/Messaging/DataMessageBroadcaster.cpp"/>
+        <FILE id="om4DYP" name="DataMessageBroadcaster.h" compile="0" resource="0"
+              file="Source/Messaging/DataMessageBroadcaster.h"/>
+        <FILE id="Rzu8Zq" name="DataMessageListener.cpp" compile="1" resource="0"
+              file="Source/Messaging/DataMessageListener.cpp"/>
+        <FILE id="A7L67q" name="DataMessageListener.h" compile="0" resource="0"
+              file="Source/Messaging/DataMessageListener.h"/>
+        <FILE id="AmzX4d" name="DataMessage.cpp" compile="1" resource="0" file="Source/Messaging/DataMessage.cpp"/>
+        <FILE id="T8mOZl" name="DataMessage.h" compile="0" resource="0" file="Source/Messaging/DataMessage.h"/>
+      </GROUP>
+      <GROUP id="{937C8C20-D95D-E7A6-0815-F312C0B9AAC3}" name="Modules">
+        <FILE id="RoeDLW" name="Images.h" compile="0" resource="0" file="Source/Modules/Images.h"/>
+        <FILE id="cKSDpW" name="Keyboard.h" compile="0" resource="0" file="Source/Modules/Keyboard.h"/>
+        <FILE id="p4SnGX" name="Midi.h" compile="0" resource="0" file="Source/Modules/Midi.h"/>
+        <FILE id="w15eM1" name="Presets.h" compile="0" resource="0" file="Source/Modules/Presets.h"/>
+        <FILE id="quh3S0" name="Sorting.h" compile="0" resource="0" file="Source/Modules/Sorting.h"/>
+        <FILE id="PrYJEs" name="Styles.h" compile="0" resource="0" file="Source/Modules/Styles.h"/>
+        <FILE id="lbLBpc" name="System.h" compile="0" resource="0" file="Source/Modules/System.h"/>
+        <FILE id="WGnph0" name="TextLabel.h" compile="0" resource="0" file="Source/Modules/TextLabel.h"/>
+        <FILE id="sGht0S" name="Widgets.h" compile="0" resource="0" file="Source/Modules/Widgets.h"/>
+      </GROUP>
+      <GROUP id="{C521147D-4A15-1CE4-CEE7-69E5A6393259}" name="Process">
+        <FILE id="dX0oVw" name="MainProcess.cpp" compile="1" resource="0" file="Source/Process/MainProcess.cpp"/>
+        <FILE id="o9qHn5" name="MainProcess.h" compile="0" resource="0" file="Source/Process/MainProcess.h"/>
+        <FILE id="nCT02j" name="GlobalState.cpp" compile="1" resource="0" file="Source/Process/GlobalState.cpp"/>
+        <FILE id="dPTm4E" name="GlobalState.h" compile="0" resource="0" file="Source/Process/GlobalState.h"/>
+        <FILE id="TACcWv" name="ControlsState.cpp" compile="1" resource="0"
+              file="Source/Process/ControlsState.cpp"/>
+        <FILE id="nQRcvu" name="ControlsState.h" compile="0" resource="0" file="Source/Process/ControlsState.h"/>
+        <FILE id="O22gR8" name="BrowserState.cpp" compile="1" resource="0"
+              file="Source/Process/BrowserState.cpp"/>
+        <FILE id="pTnNEa" name="BrowserState.h" compile="0" resource="0" file="Source/Process/BrowserState.h"/>
+        <FILE id="lnsmrV" name="PresetState.cpp" compile="1" resource="0" file="Source/Process/PresetState.cpp"/>
+        <FILE id="QpZVtC" name="PresetState.h" compile="0" resource="0" file="Source/Process/PresetState.h"/>
+        <FILE id="qkwEkw" name="MidiState.cpp" compile="1" resource="0" file="Source/Process/MidiState.cpp"/>
+        <FILE id="SLbGyZ" name="MidiState.h" compile="0" resource="0" file="Source/Process/MidiState.h"/>
+      </GROUP>
+      <FILE id="HHUctx" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="XtcE39" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="FxGpOe" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="AGfRuz" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX" useHeaderMap="1">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" vst3BinaryLocation="/Library/Audio/Plug-Ins/VST3"
+                       auBinaryLocation="/Library/Audio/Plug-Ins/Components"/>
+        <CONFIGURATION isDebug="0" name="Release" vst3BinaryLocation="/Library/Audio/Plug-Ins/VST3"
+                       auBinaryLocation="/Library/Audio/Plug-Ins/Components"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_opengl" path="../../JUCE/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+    <VS2019 targetFolder="Builds/VisualStudio2019">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" headerPath="C:\Users\fredg\Documents\Projects\ripchord\Source;&#10;C:\Users\fredg\Documents\Projects\ripchord\Source\Assets;&#10;C:\Users\fredg\Documents\Projects\ripchord\Source\Components;&#10;C:\Users\fredg\Documents\Projects\ripchord\Source\Messaging;&#10;C:\Users\fredg\Documents\Projects\ripchord\Source\Modules;&#10;C:\Users\fredg\Documents\Projects\ripchord\Source\Process;"
+                       useRuntimeLibDLL="0"/>
+        <CONFIGURATION isDebug="0" name="Release" headerPath="C:\Users\fredg\Documents\Projects\ripchord\Source;&#10;C:\Users\fredg\Documents\Projects\ripchord\Source\Assets;&#10;C:\Users\fredg\Documents\Projects\ripchord\Source\Components;&#10;C:\Users\fredg\Documents\Projects\ripchord\Source\Messaging;&#10;C:\Users\fredg\Documents\Projects\ripchord\Source\Modules;&#10;C:\Users\fredg\Documents\Projects\ripchord\Source\Process;"
+                       useRuntimeLibDLL="0"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_opengl" path="../../JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2019>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_cryptography" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_opengl" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <LIVE_SETTINGS>
+    <OSX/>
+  </LIVE_SETTINGS>
+  <JUCEOPTIONS JUCE_VST3_CAN_REPLACE_VST2="0" JUCE_STRICT_REFCOUNTEDPOINTER="1"/>
+</JUCERPROJECT>
